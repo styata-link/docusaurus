@@ -1,0 +1,8 @@
+{
+  "label": "FiveM Client",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Most common issues and fixes for the FiveM client."
+  }
+}

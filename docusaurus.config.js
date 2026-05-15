@@ -15,7 +15,7 @@ const footerThanksColumn =
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Styata Documentation',
+  title: 'Sty\'s Unofficial FiveM/Cfx.re Documentation',
   tagline: 'Guides and troubleshooting',
   favicon: 'img/favicon.ico',
 
@@ -91,7 +91,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'Styata Documentation',
+        title: '',
         // Replace static/img/styata-navbar-logo.svg with your own file (SVG or PNG; update extension here if needed).
         logo: {
           alt: 'Styata Documentation',
@@ -120,23 +120,6 @@ const config = {
               {
                 label: 'Home',
                 to: '/',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
               },
             ],
           },

@@ -21,6 +21,10 @@
   --ifm-font-family-monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
     Consolas, monospace;
   --ifm-code-font-size: 90%;
+  --ifm-code-border-radius: 4px;
+  --ifm-code-padding-horizontal: 0.35rem;
+  --ifm-code-padding-vertical: 0.12rem;
+  --ifm-pre-border-radius: var(--ifm-global-radius);
   --ifm-heading-font-weight: 600;
   --ifm-global-radius: 14px;
 
@@ -82,10 +86,22 @@
   --doc-sidebar-focus-ring-strong: rgba(94, 92, 230, 0.65);
   --doc-sidebar-category-outline: rgba(94, 92, 230, 0.3);
   --doc-sidebar-category-outline-active: rgba(94, 92, 230, 0.45);
+
+  --ifm-code-background: #eef0f4;
+  --ifm-code-border-color: rgba(15, 23, 42, 0.12);
+}
+
+/* Inline `code` only — keep fenced blocks using --ifm-pre-border-radius */
+:not(pre) > code {
+  border-radius: var(--ifm-code-border-radius);
+  border: 1px solid var(--ifm-code-border-color, rgba(0, 0, 0, 0.1));
 }
 
 [data-theme='dark'] {
   color-scheme: dark;
+
+  --ifm-code-background: #1e2433;
+  --ifm-code-border-color: rgba(148, 163, 184, 0.18);
 
   /* Global dark (blog, etc.): same navy family as KBack */
   --ifm-color-primary: #8b89f5;

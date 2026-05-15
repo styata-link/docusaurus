@@ -319,6 +319,12 @@ html {
   border-top: 1px solid rgba(15, 23, 42, 0.08);
 }
 
+.footer__thanks-name {
+  color: var(--ifm-footer-link-color);
+  font-size: inherit;
+  line-height: 2;
+}
+
 [data-theme='dark'] .button--secondary {
   --ifm-button-background-color: #1a1f2e;
   --ifm-button-border-color: rgba(148, 163, 184, 0.2);

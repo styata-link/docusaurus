@@ -5,8 +5,13 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import {thanksFooterItems} from './contributors.js';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+const thanksItems = thanksFooterItems();
+const footerThanksColumn =
+  thanksItems.length > 0 ? [{title: 'Thanks', items: thanksItems}] : [];
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -144,6 +149,7 @@ const config = {
               },
             ],
           },
+          ...footerThanksColumn,
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Styata. Built with Docusaurus.`,
       },

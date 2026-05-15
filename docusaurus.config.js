@@ -134,7 +134,7 @@ const config = {
           },
           ...footerThanksColumn,
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Styata. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Styata. Built with Docusaurus. | Not affiliated with Rockstar Games or Cfx.re.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -1,9 +1,8 @@
 {
-    "label": "FXServer",
-    "position": 3,
-    "link": {
-      "type": "generated-index",
-      "description": "Most common issues and fixes for your FXServer."
-    }
+  "label": "Common Server Issues",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Common issues, relating to your FXServer - and how to fix them."
   }
-  
+}
